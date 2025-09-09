@@ -20,4 +20,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn spotless:apply && mvn -N wrapper:wrapper && chmod +x ./mvnw && mvnw.cmd clean install -DskipTests
+      run: mvn spotless:apply && mvn -N wrapper:wrapper && chmod +x ./mvnw && ./mvnw clean install -DskipTests
