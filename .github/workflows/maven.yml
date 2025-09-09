@@ -1,3 +1,4 @@
+# DevOps build file for GitHub Actions
 name: Build Java code with Maven
 
 on:
