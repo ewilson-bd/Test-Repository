@@ -30,6 +30,7 @@ jobs:
         
         ### SCANNING OPTIONAL
         polaris_application_name: "Evan Onboarding"
+        polaris_project_name: "Historical scan"
         
         ### SCANNING OPTIONAL: Pull Request comments
         #polaris_prComment_enabled: true
