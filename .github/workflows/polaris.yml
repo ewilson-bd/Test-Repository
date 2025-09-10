@@ -1,9 +1,9 @@
 name: CI-Polaris-Basic
 on:
   push:
-    branches: [main]
+    branches: [main, Historical-scans]
   pull_request:
-    branches: [main]
+    branches: [main, Historical-scans]
   workflow_dispatch:
    
 jobs:
