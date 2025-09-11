@@ -127,6 +127,7 @@ public class JWTToken {
       JwtConsumer jwtConsumer =
           new JwtConsumerBuilder()
               .setSkipAllValidators()
+              .setRequireExpirationTime()
               .setVerificationKey(new HmacKey(secretKey.getBytes(UTF_8)))
               .setRelaxVerificationKeyValidation()
               .build();
