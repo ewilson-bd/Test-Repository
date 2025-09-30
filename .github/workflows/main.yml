@@ -26,6 +26,8 @@ jobs:
         java-version: 23
         distribution: temurin
         cache: maven
+    - name: Prepare Maven
+      run: mvn spotless:apply && mvn -N wrapper:wrapper && chmod +x ./mvnw
     - name: Polaris Full Scan
       if: ${{ github.event_name != 'pull_request' }}
       run: |
