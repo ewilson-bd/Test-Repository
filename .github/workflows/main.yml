@@ -32,8 +32,8 @@ jobs:
       if: ${{ github.event_name != 'pull_request' }}
       run: |
         curl -fLsS -o bridge.zip ${{ vars.BRIDGECLI_LINUX64 }} && unzip -qo -d $RUNNER_TEMP bridge.zip && rm -f bridge.zip
-        ls -R $RUNNER_TEMP
-        $RUNNER_TEMP/bridge-cli --stage polaris
+        ls $RUNNER_TEMP/brige-cli-bundle-linux64
+        $RUNNER_TEMP/bridge-cli-bundle-linux64/bridge-cli --stage polaris
     - name: Polaris PR Scan
       if: ${{ github.event_name == 'pull_request' }}
       run: |
