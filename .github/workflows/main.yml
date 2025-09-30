@@ -10,7 +10,7 @@ jobs:
   polaris:
     runs-on: ubuntu-latest
     env:
-      BRIDGE_POLARIS_SERVERURL: ${{ secrets.POLARIS_SERVERURL }}
+      BRIDGE_POLARIS_SERVERURL: ${{ vars.POLARIS_SERVERURL }}
       BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESSTOKEN }}
       BRIDGE_POLARIS_ASSESSMENT_TYPES: 'SAST,SCA'
       BRIDGE_POLARIS_APPLICATION_NAME: "Merganser Duck Hardware"
